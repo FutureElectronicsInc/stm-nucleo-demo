@@ -1,12 +1,12 @@
 # stm-nucleo-demo
-INCREASE EMPLOYEE PRODUCTIVITY BY OPTIMIZING AMBIENT CONDITIONS -  CLOUD APPLICATION RELEASE 2.0
+**INCREASE EMPLOYEE PRODUCTIVITY BY OPTIMIZING AMBIENT CONDITIONS -  CLOUD APPLICATION RELEASE 2.0**
 
-LICENSE
+**LICENSE**
 
 This application is distributed under the Apache License, Version 2.0.
 
 
-INTRODUCTION
+**INTRODUCTION**
 
 Smart organizations understand that human capital is their competitive differentiator, and that their primary goal is
 to enhance the performance of their people assets. 
@@ -32,25 +32,25 @@ The current application consists of three following parts:
 3.	Interactive thermostat. 
 
 
-Heat Measures
+**Heat Measures**
 
-a.	When temperature is between 10 and 20 degrees Celsius – Green LED remains on.  
+*a.	When temperature is between 10 and 20 degrees Celsius – Green LED remains on.  
 	Traffic light indicator on Node-Red dashboard is Green
-b.	When temperature is between 21 and 24 degrees Celsius – Green LED turns off and Yellow LED turns on. 
+*b.	When temperature is between 21 and 24 degrees Celsius – Green LED turns off and Yellow LED turns on. 
 	Traffic light indicator on Node-Red dashboard is Yellow.
-c.	When temperature is greater than or equal to 25 degrees Celsius – Green & Yellow LED off and Red LED turns on.  
+*c.	When temperature is greater than or equal to 25 degrees Celsius – Green & Yellow LED off and Red LED turns on.  
 	Traffic light indicator on Node-Red dashboard is Red
-d.	When temperature is greater than or equal to 25 degrees Celsius – DC motor with fan blades begins 
+*d.	When temperature is greater than or equal to 25 degrees Celsius – DC motor with fan blades begins 
 	to rotate and remains on until the temperature drops below 25 degrees
 
 The "Ambient Workplace Status" light will change the color (green, yellow, red) depend on temperature selected by the user.
 
-Dew Point Measures
+**Dew Point Measures**
 
 If heating season selected and the dew point > 60F –  Bluemix sends out a request to turn on fan and displays a message “HEATING IN PROGRESS”
 If cooling season selected and the dew point < 50F – Bluemix sends out a request to turn on fan and displays a message “COOLING IN PROGRESS”
 
-Dew Point Calculation
+**Dew Point Calculation**
 
 Used an approximation.
 1.	Let Tdp represent the dew point
@@ -65,7 +65,7 @@ b=17.67; c=243.5;
 2.	Calculate dew point
 Tdp = ((c * Ƴ) / (b – Ƴ));
 
-EQUIPMENT REQUIRED
+**EQUIPMENT REQUIRED**
 
 •	Main board NUCLEO F401RE
 •	Wi-Fi module
@@ -78,7 +78,7 @@ EQUIPMENT REQUIRED
 •	1 x led red
 
 
-IMPLEMENTATION
+**IMPLEMENTATION**
 
 The IBM Bluemix used as a Node Red application container. 
 
@@ -123,13 +123,13 @@ With the current implementation if the temperature will be above the threshold 2
 
 The steps are here:
 
-a.	Lunch “Watson IOT platform service”.
-b.	Click on the “Devices” tab.
-c.	Click “Add Device” button.
-d.	Create device type.
-e.	Enter unique device id.
-f.	Enter optional parameters if necessary.
-g.	Click Finish.
+*a.	Lunch “Watson IOT platform service”.
+*b.	Click on the “Devices” tab.
+*c.	Click “Add Device” button.
+*d.	Create device type.
+*e.	Enter unique device id.
+*f.	Enter optional parameters if necessary.
+*g.	Click Finish.
 
 The generated token will be used for the device configuration to connect to the IBM Bluemix Watson IOT service.
 The device "id" and device "type" parameters additionally will be used to send the remote commands to the device.
