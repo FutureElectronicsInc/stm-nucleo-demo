@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'D:\IBM Bluemix\projects\weather data\Montreal Weather Data January 2013 - July 2017-new.csv'
+LOAD DATA INFILE '/home/your_folder/Montreal Weather Data.csv'
 INTO TABLE wdata
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
