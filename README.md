@@ -47,8 +47,8 @@ The "Ambient Workplace Status" light will change the color (green, yellow, red) 
 
 **Dew Point Measures**
 
-If heating season selected and the dew point > 60F –  Bluemix sends out a request to turn on fan and displays a message “HEATING IN PROGRESS”
-If cooling season selected and the dew point < 50F – Bluemix sends out a request to turn on fan and displays a message “COOLING IN PROGRESS”
+* If heating season selected and the dew point > 60F –  Bluemix sends out a request to turn on fan and displays a message “HEATING IN PROGRESS”
+* If cooling season selected and the dew point < 50F – Bluemix sends out a request to turn on fan and displays a message “COOLING IN PROGRESS”
 
 **Dew Point Calculation**
 
@@ -124,13 +124,13 @@ With the current implementation if the temperature will be above the threshold 2
 
 The steps are here:
 
-*a.	Lunch “Watson IOT platform service”.
-*b.	Click on the “Devices” tab.
-*c.	Click “Add Device” button.
-*d.	Create device type.
-*e.	Enter unique device id.
-*f.	Enter optional parameters if necessary.
-*g.	Click Finish.
+* Lunch “Watson IOT platform service”
+* Click on the “Devices” tab
+* Click “Add Device” button
+* Create device type
+* Enter unique device id
+* Enter optional parameters if necessary
+* Click Finish
 
 The generated token will be used for the device configuration to connect to the IBM Bluemix Watson IOT service.
 The device "id" and device "type" parameters additionally will be used to send the remote commands to the device.
@@ -140,9 +140,9 @@ The “IBM IOT event receiver” used to listen and transmit the main data to th
 
 Steps to store data:
 
-a.	Create a database “mhwdata”.
-b.	Create  a table “wdata” using SQL script “wdata.sql”
-c.	The provided “Montreal Weather Data.csv” file should be loaded into the MySQL database using the script named “load_csv.sql”.
+* Create a database “mhwdata”.
+* Create  a table “wdata” using SQL script “wdata.sql”
+* The provided “Montreal Weather Data.csv” file should be loaded into the MySQL database using the script named “load_csv.sql”.
 
 10. In the IBM Bluemix Node Red application you should update the “mysql” node with your credentials.
 
