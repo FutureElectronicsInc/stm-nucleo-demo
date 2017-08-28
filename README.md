@@ -20,9 +20,9 @@ The current application consists of three following parts:
 
 1.	Main screen displays a gauge for temperature, humidity, and pressure respectively with an adjacent MIN/MAX value for each.
 
-	Temperature readings from the STM board 
-	Pressure readings from the STM board
-	Humidity readings from the STM board
+	Temperature readings from the STM board.
+	Pressure readings from the STM board.
+	Humidity readings from the STM board.
 
 
 2.	Historical and statistical data analyses and their visualization for over a 5-year period.
@@ -92,7 +92,7 @@ The IBM Bluemix used as a Node Red application container.
 The “Analyses” block used to accumulate and generate statistics and then transmit the aggregated data 
 to the Web server through the web sockets. In order to accumulate and get the average for a period of time 
 the “aggregator” node was added to the list of the nodes in the Node Red editor. 
-It was done from the IBM Bluemix DevOps services. 
+It was included from the IBM Bluemix DevOps services. 
 
 4. Open the “package.json” file in the “Eclipse Orion Web IDE” and add "node-red-contrib-aggregator":"1.0.4" and 
 the "node-red-node-mysql":"0.0.16" node (this node will be used for the MySQL connector) to the end of “dependencies” list. 
@@ -132,9 +132,11 @@ f.	Enter optional parameters if necessary.
 g.	Click Finish.
 
 The generated token will be used for the device configuration to connect to the IBM Bluemix Watson IOT service.
+The device "id" and device "type" parameters additionally will be used to send the remote commands to the device.
 The “IBM IOT event receiver” used to listen and transmit the main data to the Web server through web sockets. 
 
 9. In order to store the historical data used a MySQL database.  
+
 Steps to store data:
 
 a.	Create a database “mhwdata”.
@@ -146,7 +148,7 @@ c.	The provided “Montreal Weather Data.csv” file should be loaded into the M
 The demo of the application is here:
 https://stm-nucleo-demo.mybluemix.net/sensors
 
-In the "screenshots" folder you also can find the pictures - how the web application looks (to compare with your final result).
+The "screenshots" folder contains the the screenshots of the web pages. 
 
 
 
