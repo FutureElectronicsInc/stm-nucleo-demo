@@ -34,13 +34,13 @@ The current application consists of three following parts:
 
 **Heat Measures**
 
-*a.	When temperature is between 10 and 20 degrees Celsius – Green LED remains on.  
+* a.	When temperature is between 10 and 20 degrees Celsius – Green LED remains on.  
 	Traffic light indicator on Node-Red dashboard is Green
-*b.	When temperature is between 21 and 24 degrees Celsius – Green LED turns off and Yellow LED turns on. 
+* b.	When temperature is between 21 and 24 degrees Celsius – Green LED turns off and Yellow LED turns on. 
 	Traffic light indicator on Node-Red dashboard is Yellow.
-*c.	When temperature is greater than or equal to 25 degrees Celsius – Green & Yellow LED off and Red LED turns on.  
+* c.	When temperature is greater than or equal to 25 degrees Celsius – Green & Yellow LED off and Red LED turns on.  
 	Traffic light indicator on Node-Red dashboard is Red
-*d.	When temperature is greater than or equal to 25 degrees Celsius – DC motor with fan blades begins 
+* d.	When temperature is greater than or equal to 25 degrees Celsius – DC motor with fan blades begins 
 	to rotate and remains on until the temperature drops below 25 degrees
 
 The "Ambient Workplace Status" light will change the color (green, yellow, red) depend on temperature selected by the user.
@@ -67,15 +67,15 @@ Tdp = ((c * Ƴ) / (b – Ƴ));
 
 **EQUIPMENT REQUIRED**
 
-•	Main board NUCLEO F401RE
-•	Wi-Fi module
-•	Temp sensor
-•	Humidity sensor
-•	Pressure sensor
-•	Fan blade
-•	1 x led green
-•	1 x led yellow
-•	1 x led red
+*	Main board NUCLEO F401RE
+*	Wi-Fi module
+*	Temp sensor
+*	Humidity sensor
+*	Pressure sensor
+*	Fan blade
+*	1 x led green
+*	1 x led yellow
+*	1 x led red
 
 
 **IMPLEMENTATION**
