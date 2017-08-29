@@ -125,7 +125,7 @@ With the current implementation if the temperature will be above the threshold 2
 
 Here are the steps to follow:
 
-* Lunch “Watson IOT platform service”
+* Launch “Watson IOT platform service”
 * Click on the “Devices” tab
 * Click “Add Device” button
 * Create device type
@@ -134,10 +134,10 @@ Here are the steps to follow:
 * Click Finish
 
 The generated token will be used for the device configuration to connect to the IBM Bluemix Watson IOT service.
-The device "id" and device "type" parameters additionally will be used to send the remote commands to the device.
-The “IBM IOT event receiver” used to listen and transmit the main data to the Web server through web sockets. 
+The device "id" and device "type" parameters will also be used to send the remote commands to the device.
+The “IBM IOT event receiver” is used to listen and transmit the main data to the Web server through web sockets. 
 
-9. In order to store the historical data used a MySQL database.  
+9. In order to store the historical data the MySQL database is used.  
 
 Steps to store data:
 
