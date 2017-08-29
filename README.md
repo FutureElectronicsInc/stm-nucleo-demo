@@ -47,8 +47,8 @@ The "Ambient Workplace Status" light will change the color (green, yellow, red) 
 
 **Dew Point Measures**
 
-* If heating season selected and the dew point > 60F –  Bluemix sends out a request to turn on fan and displays a message “HEATING IN PROGRESS”
-* If cooling season selected and the dew point < 50F – Bluemix sends out a request to turn on fan and displays a message “COOLING IN PROGRESS”
+* If heating season selected and the dew point > 60F (15.5 C) –  Bluemix sends out a request to turn on fan and displays a message “HEATING IN PROGRESS”
+* If cooling season selected and the dew point < 50F (10 C)– Bluemix sends out a request to turn on fan and displays a message “COOLING IN PROGRESS”
 
 **Dew Point Calculation**
 
@@ -88,9 +88,10 @@ The IBM Bluemix used as a Node Red application container.
 2. In the IBM Bluemix create “Internet of Things Platform Starter” application which based on the “IBM Watson IoT platform”. 
    By default it is creating DevOps IBM Bluemix service and the instance to access to the Node-Red Javascript editor.
 
-3. Into the Node-Red Javascript editor necessary to import "dev-kits-st-nucleo-dashboard-0.2.json" file content and deploy.
+3. It is necessary to import into the Node-Red Javascript editor the "dev-kits-st-nucleo-dashboard-0.2.json" file 
+   content and deploy it.
 
-The “Analyses” block used to accumulate and generate statistics and then transmit the aggregated data 
+The “Analyses” block used to accumulate and generate statistics and then to transmit the aggregated data 
 to the Web server through the web sockets. In order to accumulate and get the average for a period of time 
 the “aggregator” node was added to the list of the nodes in the Node Red editor. 
 It was included from the IBM Bluemix DevOps services. 
@@ -99,30 +100,30 @@ It was included from the IBM Bluemix DevOps services.
 the "node-red-node-mysql":"0.0.16" node (this node will be used for the MySQL connector) to the end of “dependencies” list. 
 
 5. Import the "fe" folder with the icons into the "images" folder and then rebuild and deploy the applicaton.
-After deployment necessary to restart IBM Bluemix application.
+After deployment it is necessary to restart IBM Bluemix application.
 
 Alternatively it can be done from the local computer by cloning the code using Git and then after modification 
 commit and push it to the main repository.
 
-The HTTP request/response nodes used to render HTML page. 
+The HTTP request/response nodes are used to render HTML page. 
 Web server on the GET request is rendering HTML page which is loading CSS and Javascript parts.
 
-In the Javascript part there are two web socket listeners: 
+There are two web socket listeners in the Javascript part : 
 
 a.	For the main data (Temperature, Humidity, and Pressure).
 b.	For the aggregated data (minimum, maximum value for a defined period of time (1 minute for demo only)).
 
-6. In order to the IBM IoT node (event receiver) was able to receive events necessary to add the unique API key and token 
+6. For the IBM IoT node (event receiver) to be able to receive events, it is necessary to add the unique API key and token 
 into the "IBM IOT" node configuration. The API key and token can be found in the environment variables in the Cloud Foundry Application.
-In order to check if the device is connected you can open the IBM Watson IOT platform service and click on the “Devices” tab.
+In order to check if the device is connected, you can open the IBM Watson IOT platform service and click on the “Devices” tab.
 
-7. The Google API key must added into the environment variables of the application (DevOps service -> Runtime)
+7. The Google API key must be added into the environment variables of the application (DevOps service -> Runtime)
 
 With the current implementation if the temperature will be above the threshold 25.8 then the warning message will be displayed.
 
 8. The next step is to create a device in the Watson IOT platform service.
 
-The steps are here:
+Here are the steps to follow:
 
 * Lunch “Watson IOT platform service”
 * Click on the “Devices” tab
