@@ -105,7 +105,7 @@ After deployment it is necessary to restart IBM Bluemix application.
 Alternatively it can be done from the local computer by cloning the code using Git and then after modification 
 commit and push it to the main repository.
 
-The HTTP request/response nodes are used to render HTML page. 
+The HTTP request/response nodes are used to render the HTML page. 
 Web server on the GET request is rendering HTML page which is loading CSS and Javascript parts.
 
 There are two web socket listeners in the Javascript part : 
@@ -121,21 +121,25 @@ In order to check if the device is connected, you can open the IBM Watson IOT pl
 
 With the current implementation if the temperature will be above the threshold 25.8 then the warning message will be displayed.
 
-8. The next step is to create a device in the Watson IOT platform service.
+8. The next step is to create a device in the Watson IOT platform service (screenshot #8 in "screenshots\ibm_bluemix" folder).
 
 Here are the steps to follow:
 
-* Launch “Watson IOT platform service”
+* Launch “Watson IOT platform" service
 * Click on the “Devices” tab
 * Click “Add Device” button
 * Create device type
-* Enter unique device id
+* Enter the unique device id
 * Enter optional parameters if necessary
 * Click Finish
 
 The generated token will be used for the device configuration to connect to the IBM Bluemix Watson IOT service.
 The device "id" and device "type" parameters will also be used to send the remote commands to the device.
 The “IBM IOT event receiver” is used to listen and transmit the main data to the Web server through web sockets. 
+
+Inside the “Watson IOT platform" service you can create a different types of dashboards.
+The "screenshots\ibm_bluemix" folder contains the screenshots (#11 and #12) with the information how to access 
+and create the dashboards.
 
 9. In order to store the historical data the MySQL database is used.  
 
